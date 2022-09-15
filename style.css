@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  font-size: 62.5%;
+  background-color: #e7e5e4;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  border: 2px solid #a8a29e;
+  margin: 20vh auto;
+  background-color: #d6d3d1;
+  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+  padding: 0.6em 0.3em;
+  border-radius: 0.5em;
+  /* border: 2px solid red; */
+}
+.heading {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 4px solid #282a35;
+  padding-bottom: 1em;
+  text-transform: capitalize;
+  text-align: center;
+}
+.description {
+  padding: 0.8em 1em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* color: white; */
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+#caption {
+  padding: 0.7em;
+  font-size: large;
+  color: green;
+  font-weight: bolder;
+}
+label {
+  font-size: large;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+input {
+  font-size: large;
+  padding: 0.4em;
+  border-radius: 0.5em;
+}
+
+#check-btn {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #a8a29e;
+  /* margin-top: 0.5em auto; */
+  width: 50%;
+  text-align: center;
+  margin: 1em auto;
+}
+#check-btn:hover {
+  background-color: #78716c;
+}
+#error-message {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  padding: 0.5em;
+}
+td {
+  text-align: center;
+}
+
+.change-table {
+  font-size: 1.6rem;
+}
+
+/* media query for mobile version */
+@media (max-width: 852px) {
+  html {
+    font-size: 0.9rem;
+  }
+  .container {
+    margin-top: 0.7em;
+    width: 95%;
+    padding: 0.7em;
+  }
+  .heading {
+    border-bottom: 2px solid #282a35;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* width: 95%; */
+    float: left;
+    margin-top: 0.5em;
+  }
+  tr::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  table {
+    margin: auto;
+  }
+
+  .description {
+    padding: 1em 1em;
+  }
+}
