@@ -13,7 +13,7 @@ function validateBillAndCashAmount() {
   var cashGivenINNum = Number(cashGiven.value);
   hideMessage();
 
-  if ((billAmountINNum > 0) & (cashGivenINNum > 0)) {
+  if ((billAmountINNum > 0) & (cashGivenINNum >= 0)) {
     if (cashGivenINNum > billAmountINNum) {
       const amountToBeReturned = cashGivenINNum - billAmountINNum;
       calculateChange(amountToBeReturned);
