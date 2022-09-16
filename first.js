@@ -11,9 +11,10 @@ function validateBillAndCashAmount() {
   changeTable.style.visibility = "visible";
   var billAmountINNum = Number(billAmount.value);
   var cashGivenINNum = Number(cashGiven.value);
+  // console.log(billAmountINNum > 0 && cashGivenINNum >= 0);
   hideMessage();
 
-  if ((billAmountINNum > 0) & (cashGivenINNum >= 0)) {
+  if (billAmountINNum > 0 && cashGivenINNum >= 0) {
     if (cashGivenINNum > billAmountINNum) {
       const amountToBeReturned = cashGivenINNum - billAmountINNum;
       calculateChange(amountToBeReturned);
